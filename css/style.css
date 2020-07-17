@@ -24,12 +24,6 @@ img {
     --accent-color: #F53838;
 }
 
-.container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 .header {
     padding: 50px 0 0;
 }
@@ -156,18 +150,69 @@ img {
     font-weight: 400;
 }
 
+/* Features section  */
+.features {
+    padding: 55px 0 130px;
+}
 
+.features .container_small {
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 170px;
+}
 
+.features .section-headline {
+    margin: 40px 0 20px;
+}
 
+.features__list {
+    margin-top: 30px;
+}
 
+.features__list-item {
+    background: url(../img/checks.png) left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px 0 5px 33px;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+}
 
-
+.features__list-item:not(:last-child) {
+    margin-bottom: 21px;
+}
 
 
 
 /* Utility classes */
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container_small {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
 .section-photo {
     width: 100%;
+}
+
+.section-headline {
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-headline_left {
+    text-align: left;
 }
 
 .section-description {
