@@ -4,3 +4,139 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --primary-color: #0b132a;
+    --secondary-color: #4f5665;
+    --third-color: #fff;
+    --accent-color: #F53838;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 50px 0 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__company-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.header__company-name .span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation-item {
+    margin: 0 20px;
+}
+
+.header__navigation-link {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header__button {
+    padding: 13px 45px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.header__button_focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 50px;
+}
+
+/* Section main */
+.main {
+    padding-top: 90px;
+}
+
+.main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.main__headline {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.main__headline .span {
+    font-weight: 700;
+}
+
+.main .section-description {
+    margin: 30px 0 60px;
+}
+
+
+/* Utility classes */
+.section-photo {
+    width: 100%;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.section-description .span {
+    font-weight: 500;
+}
+
+.section-description_left {
+    text-align: left;
+}
+
+.btn {
+    color: var(--third-color);
+    padding: 18px 78px;
+    background: var(--accent-color);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
