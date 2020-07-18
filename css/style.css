@@ -264,6 +264,21 @@ img {
     padding: 15px 60px;
 }
 
+/* Network section */
+.network {
+    padding: 65px 0;
+}
+
+.network__map {
+    margin: 150px 0 115px;
+}
+
+.network__services-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+}
+
 
 
 
