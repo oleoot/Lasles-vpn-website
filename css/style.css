@@ -202,6 +202,7 @@ img {
     border: 2px solid #ddd;
     padding: 80px 60px;
     position: relative;
+    cursor: pointer;
 }
 
 .plan__item_active {
@@ -275,11 +276,131 @@ img {
 
 .network__services-wrap {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(5, max-content);
+    gap: 30px;
 }
 
+/* Reviews section */
+.reviews {
+    padding: 50px 0;
+}
 
+.reviews__slider-wrap {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+}
+
+.reviews__slide {
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid #ddd;
+    min-height: 220px;
+}
+
+.reviews-slider .tns-item:not(.tns-slide-active)+.tns-slide-active .reviews__slide {
+    border: 2px solid var(--accent-color);
+}
+
+.reviews-slide__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-slide-credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews-slide-img {
+    margin-right: 20px;
+}
+
+.review-slide__name {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.review-slide__city {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.reviews-slide__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews-slide__rating-number {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.reviews-slide__comment {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.reviews__slider-nav {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    bottom: -95px;
+}
+
+.reviews__nav-item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #dde0e4;
+    margin-right: 15px;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer;
+}
+
+.reviews__nav-item.tns-nav-active {
+    width: 45px;
+    height: 15px;
+    background: var(--accent-color);
+    border-radius: 15px;
+}
+
+.reviews__slider-controls {
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+    display: flex;
+    outline: none;
+}
+
+.reviews__control {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.reviews__control:first-child {
+    margin-right: 20px;
+}
+
+.reviews__control_active {
+    background: var(--accent-color);
+}
 
 
 /* Utility classes */
