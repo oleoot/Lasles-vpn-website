@@ -4,7 +4,18 @@ const reviewsSlider = tns({
     slideBy: 1,
     gutter: 50,
     navContainer: '.reviews__slider-nav',
-    controlsContainer: '.reviews__slider-controls'
+    controlsContainer: '.reviews__slider-controls',
+    responsive: {
+        768: {
+            items: 2
+        },
+        1024: {
+            items: 2
+        },
+        1280: {
+            items: 3
+        }
+    }
 });
 // Select plan
 const planBlock = document.querySelectorAll('.plan__item');

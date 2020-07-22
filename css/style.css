@@ -112,9 +112,9 @@ img {
 }
 
 .stats .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
     border-radius: 10px;
     box-shadow: 0 30px 50px -50px #adadad;
     padding: 37.5px 90px;
@@ -272,6 +272,7 @@ img {
 
 .network__map {
     margin: 150px 0 115px;
+    width: 100%;
 }
 
 .network__services-wrap {
@@ -415,6 +416,7 @@ img {
 .subscribe {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -557,3 +559,117 @@ img {
 }
 
 /* Utility classes end*/
+
+
+/* Adaptivness */
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .stats__item_border {
+        padding: 0 30px;
+    }
+
+    .plan__items-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .network__services-wrap {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 80px;
+    }
+
+    .network__services {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .container,
+    .container_small,
+    .features .container_small,
+    .stats .container {
+        max-width: 700px;
+    }
+
+    .main .container {
+        grid-template-columns: 1fr;
+    }
+
+    .main .section-photo,
+    .features .section-photo {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .stats__item {
+        flex-direction: column;
+    }
+
+    .stats__img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .stats__number {
+        text-align: center;
+    }
+
+    .stats__item_border {
+        border: none;
+        padding: 0;
+    }
+
+    .features .container_small {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features__list {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .plan .container {
+        max-width: 400px;
+    }
+
+    .plan__items-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .network__services-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscribe .section-headline {
+        text-align: center;
+    }
+
+    .subscribe {
+        width: 90%;
+        padding: 30px 40px;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: -340px;
+        margin: auto;
+    }
+
+    .subscribe .section-description {
+        margin: 30px 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .footer__info {
+        grid-template-columns: auto auto auto;
+        gap: 80px;
+    }
+}
