@@ -644,7 +644,9 @@ img {
 }
 
 .btn {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
     color: var(--third-color);
     padding: 18px 78px;
     border-radius: 10px;
@@ -850,7 +852,11 @@ img {
 
 @media screen and (max-width: 499px) {
     .hidden-menu {
-        padding: 50px 0;
+        padding: 120px 0;
+    }
+
+    .main .btn {
+        margin: 0 auto;
     }
 
     .container,
@@ -934,6 +940,12 @@ img {
 
     .subscribe {
         top: -500px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hidden-menu {
+        padding: 50px 0;
     }
 }
 
