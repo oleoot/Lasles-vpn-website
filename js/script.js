@@ -25,7 +25,7 @@ const reviewsSlider = tns({
 });
 // Select plan
 const planBlock = document.querySelectorAll('.plan__item');
-
+const buttons = document.querySelectorAll('.plan__button');
 
 planBlock.forEach((item) => {
     item.addEventListener('click', changePlan)
@@ -33,15 +33,24 @@ planBlock.forEach((item) => {
     function changePlan() {
         removeAll()
         addBorder(this)
+        addAccentBtn(this)
     }
 
     function removeAll() {
         planBlock.forEach((item) => {
             item.classList.remove('plan__item_active')
         })
+        buttons.forEach((btn) => {
+            btn.classList.remove('btn__active')
+        })
     }
 
     function addBorder(block) {
         block.classList.add('plan__item_active')
+    }
+
+    function addAccentBtn(infoBlock) {
+        const button = infoBlock.querySelector('.btn');
+        button.classList.add('btn__active')
     }
 })
