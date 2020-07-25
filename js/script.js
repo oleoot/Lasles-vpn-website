@@ -6,6 +6,12 @@ const reviewsSlider = tns({
     navContainer: '.reviews__slider-nav',
     controlsContainer: '.reviews__slider-controls',
     responsive: {
+        0: {
+            items: 1
+        },
+        640: {
+            items: 2
+        },
         768: {
             items: 2
         },
