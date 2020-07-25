@@ -182,7 +182,7 @@ img {
 }
 
 .features__list-item {
-    background: url(../img/checks.png) left;
+    background: url(../img/icons/checks.png) left;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px 0 5px 33px;
@@ -237,7 +237,7 @@ img {
 }
 
 .plan__list-items {
-    background: url(../img/check-transparent.png) left/contain;
+    background: url(../img/icons/check-transparent.png) left/contain;
     background-repeat: no-repeat;
     padding: 2.5px 0 2.5px 35px;
 }
