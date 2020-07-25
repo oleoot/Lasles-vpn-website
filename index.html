@@ -11,6 +11,19 @@
 </head>
 
 <body>
+    <div class="hidden-menu" id="hidden-menu">
+        <div class="container">
+            <ul class="flex-container hidden-ul">
+                <li class="hidden-li"><a href="#main" class="hidden-a">About</a></li>
+                <li class="hidden-li"><a href="#features" class="hidden-a">Features</a></li>
+                <li class="hidden-li"><a href="#plan" class="hidden-a">Pricing</a></li>
+                <li class="hidden-li"><a href="#reviews" class="hidden-a">Testimonials</a></li>
+                <li class="hidden-li"><a href="#footer" class="hidden-a">Help</a></li>
+                <li class="hidden-li"><a href="#" class="header__button">Sign In</a></li>
+                <li class="hidden-li"><a href="#" class="header__button header__button_focus">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <a href="#" class="header__left">
@@ -19,17 +32,24 @@
             </a>
             <div class="header__center">
                 <ul class="header__navigation">
-                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">About</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Features</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Pricing</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Testimonials</a>
+                    <li class="header__navigation-item"><a href="#main" class="header__navigation-link">About</a></li>
+                    <li class="header__navigation-item"><a href="#features" class="header__navigation-link">Features</a>
                     </li>
-                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Help</a></li>
+                    <li class="header__navigation-item"><a href="#plan" class="header__navigation-link">Pricing</a></li>
+                    <li class="header__navigation-item"><a href="#reviews"
+                            class="header__navigation-link">Testimonials</a>
+                    </li>
+                    <li class="header__navigation-item"><a href="#footer" class="header__navigation-link">Help</a></li>
                 </ul>
             </div>
             <div class="header__right">
                 <a href="#" class="header__button">Sign In</a>
                 <a href="#" class="header__button header__button_focus">Sign Up</a>
+                <div class="burger-menu flex-container" id="hidden-menu-btn">
+                    <div class="menu-line line1"></div>
+                    <div class="menu-line line2"></div>
+                    <div class="menu-line line3"></div>
+                </div>
             </div>
         </div>
     </header>
