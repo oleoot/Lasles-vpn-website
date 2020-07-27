@@ -106,8 +106,7 @@ img {
     transition: all 0.3s ease;
 }
 
-
-
+/* Header ================================================================================================================== */
 .header {
     padding: 25px 0;
     position: fixed;
@@ -179,7 +178,7 @@ img {
     color: var(--third-color);
 }
 
-/* Section main */
+/* Section main ==============================================================================================*/
 .main {
     padding-top: 180px;
 }
@@ -205,7 +204,7 @@ img {
     margin: 30px 0 60px;
 }
 
-/* Stats section */
+/* Stats section ===================================================================================================== */
 .stats {
     margin-top: 65px;
     padding: 37.5px 0;
@@ -250,7 +249,7 @@ img {
     font-weight: 400;
 }
 
-/* Features section  */
+/* Features section ===================================================================================================== */
 .features {
     padding: 55px 0 130px;
 }
@@ -284,7 +283,7 @@ img {
     margin-bottom: 21px;
 }
 
-/* Plan section  */
+/* Plan section ===================================================================================================== */
 .plan {
     padding: 85px 0;
     background: #fbfbfb;
@@ -366,7 +365,7 @@ img {
     padding: 15px 60px;
 }
 
-/* Network section */
+/* Network section =========================================================================================*/
 .network {
     padding: 65px 0;
 }
@@ -382,7 +381,7 @@ img {
     gap: 30px;
 }
 
-/* Reviews section */
+/* Reviews section ==============================================================================================*/
 .reviews {
     padding: 50px 0 300px;
 }
@@ -512,7 +511,7 @@ img {
     background: var(--accent-color);
 }
 
-/* footer */
+/* Footer =======================================================================================================*/
 .footer {
     background: #f8f8f8;
     padding: 190px 0 110px;
@@ -604,7 +603,7 @@ img {
 }
 
 
-/* Utility classes */
+/* Utility classes ===================================================================================================*/
 
 .container {
     width: 100%;
@@ -676,27 +675,25 @@ img {
     color: var(--accent-color);
 }
 
-/* Utility classes end*/
-
-
-/* Adaptivness */
+/* Adaptivness ==============================================================================================================*/
 @media screen and (max-width: 1280px) {
-    .container {
-        max-width: 900px;
-    }
 
+    /* Header ===================================================================================================== */
     .header__navigation {
         display: none;
     }
 
+    /* Stats section ===================================================================================================== */
     .stats__item_border {
         padding: 0 30px;
     }
 
+    /* Plan section ================================================================================*/
     .plan__items-wrap {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Network section ================================================================================*/
     .network__services-wrap {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 80px;
@@ -705,26 +702,21 @@ img {
     .network__services {
         margin: 0 auto;
     }
+
+    /* Utility classes ===================================================================================================== */
+    .container {
+        max-width: 900px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
+
+    /* Hidden menu ==============================================================================================*/
     .burger-menu {
         display: flex;
     }
 
-    .container,
-    .container_small,
-    .features .container_small,
-    .stats .container {
-        max-width: 700px;
-    }
-
-    .features,
-    .plan,
-    .network {
-        padding: 50px 0;
-    }
-
+    /* Main section ============================================================================================== */
     .main .container {
         grid-template-columns: 1fr;
     }
@@ -735,6 +727,7 @@ img {
         margin: 0 auto;
     }
 
+    /* Stats section ============================================================================================== */
     .stats__item {
         flex-direction: column;
     }
@@ -753,6 +746,7 @@ img {
         padding: 0;
     }
 
+    /* Features section ============================================================================================== */
     .features .section-headline {
         text-align: center;
     }
@@ -767,6 +761,7 @@ img {
         margin: 0 auto;
     }
 
+    /* Plan section ============================================================================================== */
     .plan .container {
         max-width: 400px;
     }
@@ -775,10 +770,12 @@ img {
         grid-template-columns: 1fr;
     }
 
+    /* Network section ============================================================================================== */
     .network__services-wrap {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Footer ============================================================================================== */
     .subscribe .section-headline {
         text-align: center;
     }
@@ -803,47 +800,72 @@ img {
         grid-template-columns: auto auto auto;
         gap: 80px;
     }
+
+    /* Utility classes ============================================================================================== */
+    .container,
+    .container_small,
+    .features .container_small,
+    .stats .container {
+        max-width: 700px;
+    }
+
+    .features,
+    .plan,
+    .network {
+        padding: 50px 0;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
 
+    /* Reviews section ============================================================================================== */
+    .reviews__nav-item_hidden {
+        display: block;
+    }
+
+    /* Utility classes ============================================================================================== */
     .container,
     .container_small,
     .features .container_small,
     .stats .container {
         max-width: 600px;
     }
-
-    .reviews__nav-item_hidden {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 639px) {
+
+    /* Header ============================================================================================*/
+    .header__button {
+        display: none;
+    }
+
+    /* Hidden manu ============================================================================================== */
     .hidden-menu .header__button {
         display: flex;
     }
 
-    .container,
-    .container_small,
-    .features .container_small,
-    .stats .container {
-        max-width: 450px;
-    }
-
+    /* Stats section ============================================================================================== */
     .stats .container {
         padding: 20px 40px;
         column-gap: 30px;
     }
 
+    /* Network section ============================================================================================== */
     .network__services-wrap {
         grid-template-columns: 1fr;
     }
 
+    /* Reviews section ============================================================================================== */
     .reviews {
         padding: 50px 0 340px;
     }
 
+    .reviews__nav-item_hidden {
+        display: block;
+    }
+
+    /* Footer ============================================================================================== */
     .subscribe {
         top: -405px;
     }
@@ -856,34 +878,57 @@ img {
         gap: 40px;
     }
 
-    .header__button {
-        display: none;
+    /* Utility classes  ============================================================================================== */
+    .container,
+    .container_small,
+    .features .container_small,
+    .stats .container {
+        max-width: 450px;
     }
+
 }
 
 @media screen and (max-width: 499px) {
+
+    /* Hidden menu  =============================================================================================*/
     .hidden-menu {
         padding: 120px 0;
     }
 
+    /* Main section ============================================================================================= */
     .main .btn {
         margin: 0 auto;
     }
 
-    .container,
-    .container_small,
-    .features .container_small,
-    .stats .container,
-    .plan .container {
-        max-width: 80%;
-    }
-
-
+    /* Stats section ============================================================================================= */
     .stats .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
     }
 
+    /* Plan section ============================================================================================= */
+    .plan__item {
+        padding: 40px 20px;
+    }
+
+    .plan__list {
+        margin: 50px auto 180px;
+    }
+
+    /* Network section ============================================================================================= */
+    .network__map {
+        margin: 50px 0 50px;
+    }
+
+    .network__services {
+        width: 60%;
+    }
+
+    .network__services-wrap {
+        row-gap: 40px;
+    }
+
+    /* Reviews section ============================================================================================= */
     .reviews-slide-credentials {
         flex-direction: column;
     }
@@ -904,16 +949,9 @@ img {
         margin: 0 auto 10px 0;
     }
 
-    .plan__item {
-        padding: 40px 20px;
-    }
-
-    .plan__list {
-        margin: 50px auto 180px;
-    }
-
-    .network__map {
-        margin: 50px 0 50px;
+    /* Footer ============================================================================================= */
+    .footer {
+        padding: 240px 0 20px;
     }
 
     .footer__info {
@@ -941,17 +979,19 @@ img {
         padding: 20px;
     }
 
-    .network__services {
-        width: 60%;
-    }
-
-    .network__services-wrap {
-        row-gap: 40px;
-    }
-
     .subscribe {
         top: -500px;
     }
+
+    /* Utility classes ============================================================================================= */
+    .container,
+    .container_small,
+    .features .container_small,
+    .stats .container,
+    .plan .container {
+        max-width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
