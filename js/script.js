@@ -7,10 +7,10 @@ const reviewsSlider = tns({
     controlsContainer: '.reviews__slider-controls',
     responsive: {
         0: {
-            items: 1
+            items: 1,
         },
         640: {
-            items: 2
+            items: 1
         },
         768: {
             items: 2
@@ -19,7 +19,7 @@ const reviewsSlider = tns({
             items: 2
         },
         1280: {
-            items: 3
+            items: 2
         }
     }
 });
